@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Trasitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+   <script type="text/javascript" src="prueba_1.js"></script>
+  </head>
+  <body onload="edades()">
+   <h2 align="center">Formulario validación del nombre y la edad.</h2>
+   <form name="mi_formulario" method="post" action="mailto:sam.papa.noel@gmail.com">
+    <table align="center">
+	 <tr>
+	  <td>Nombre:</td>
+	  <td><input type="text" name="nombre" size="30" maxlength="100" id="nombre" onkeypress="return valideKey(event);" /></td>
+	 </tr>
+	 <tr>
+	  <td>Edad:</td>
+	  <td><select id="edad"></select></td>
+	 </tr>
+	 <tr>
+	  <td>Sexo:</td>
+	  <td><select value="sexo">
+	       <option>H</option>
+		   <option selected>M</option>
+		  </select>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>Salario:</td>
+	  <td><input type="text" name="salario" maxlength="4">
+	 </tr>
+	  <td colspan="2" align="center">
+	   <input type="button" value="Enviar" onclick=validar_formulario()>
+	  </td>
+	 </tr>
+	</table>
+   </form>
+  </body>
+ </html>
+ 
